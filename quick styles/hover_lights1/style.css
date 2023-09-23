@@ -9,8 +9,9 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: scroll;
-    background-color: black;
+    overflow: hidden;
+    background: url("Untitled design.gif");
+    
 }
 
 .loader{
@@ -59,6 +60,8 @@ body{
 }
 
 .loader:hover span::before{
+
+    
     
     box-shadow: 0 0 20px turquoise,
     -200px -200px 0px turquoise,
@@ -73,6 +76,10 @@ body{
     -200px 200px 0px turquoise,
     -200px 200px 20px turquoise;
     transform-origin: 250px;
+}
+
+body:hover span::before{
+    background-image: url("Untitled design.gif");
 }
 
 

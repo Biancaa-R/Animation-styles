@@ -6,7 +6,18 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="loader">
+        <script type="text/javascript">
+
+            function changeColorbg(color){
+                document.body.style.background =color;
+            }
+
+            function changebg(path){
+                document.body.style.backgroundImage="url('"+path+"')";
+            }
+
+        </script>
+        <div class="loader" onmouseover="setTimeout(changeColorbg('linear-gradient(135deg,black,darkblue)'),20)" onmouseout="changebg('Untitled design.gif')">
             <span style="--i:1;"></span>
             <span style="--i:2;"></span>
             <span style="--i:3;"></span>
@@ -18,6 +29,9 @@
             <span style="--i:9;"></span>
             <span style="--i:10;"></span>
 
+
+
         </div>
+
     </body>
 </html>
